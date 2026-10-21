@@ -1,0 +1,33 @@
+bars=8760  symbols=20  2025-10-15 04:00:00 .. 2026-10-15 03:00:00
+BTC 缺失小时数 = 1
+
+=== 与 BTC 的 1h 互相关 ===
+corr_same_h = 同期1小时相关; peak_lag_h>0 表示 BTC 领先该币那么多小时
+null_peak_med = 随机移位 20 次的 |峰值| 中位数（噪声基线）
+   symbol  corr_same_h  peak_lag_h  peak_corr  null_peak_med  peak_minus_null
+  ETHUSDT       0.8865           0     0.8865         0.0269           0.8596
+  SOLUSDT       0.8373           0     0.8373         0.0261           0.8112
+  BNBUSDT       0.8029           0     0.8029         0.0261           0.7769
+ DOGEUSDT       0.7817           0     0.7817         0.0262           0.7554
+  XRPUSDT       0.7766           0     0.7766         0.0276           0.7491
+  SUIUSDT       0.7426           0     0.7426         0.0251           0.7174
+ AVAXUSDT       0.7387           0     0.7387         0.0249           0.7138
+ PEPEUSDT       0.6941           0     0.6941         0.0255           0.6687
+  ENAUSDT       0.6079           0     0.6079         0.0273           0.5806
+  UNIUSDT       0.6075           0     0.6075         0.0280           0.5795
+ NEARUSDT       0.5654           0     0.5654         0.0265           0.5389
+ PUMPUSDT       0.5654           0     0.5654         0.0260           0.5393
+  WALUSDT       0.5043           0     0.5043         0.0266           0.4777
+  ZECUSDT       0.4621           0     0.4621         0.0268           0.4353
+  TRXUSDT       0.3641           0     0.3641         0.0262           0.3379
+ XAUTUSDT       0.3439           0     0.3439         0.0327           0.3112
+SPCXBUSDT       0.1622           0     0.1622         0.0445           0.1177
+    UUSDT       0.0136           1    -0.0369         0.0296           0.0073
+RLUSDUSDT      -0.0472           1    -0.0631         0.0321           0.0310
+
+peak_lag_h 分布: {0: np.int64(17), 1: np.int64(2)}
+同期 1h 相关: mean=0.548 median=0.608 max=0.886
+真实|peak| 超过噪声基线的个数 = 19 / 19
+
+saved: C:\Users\sikaq\Desktop\中信证券\coinlab\evidence\leadlag_1h.png
+saved: C:\Users\sikaq\Desktop\中信证券\coinlab\evidence\peaklag_1h.png

@@ -1,0 +1,38 @@
+长期币 121 个；样本 3228 天
+
+=== A) 多日滞后扫描（每对独立检验，只报分布量级）===
+滞后             对数      lift中位%      lift均值% |lift|>0.5%对数
+t+1         14520      -0.084      -0.016       6597
+t+2         14520      -0.091      -0.020       6407
+t+3         14520      -0.080      -0.009       6327
+t+5         14520      -0.075      -0.009       6157
+
+=== B) 时变领先：9 年切 3 段，各段 lift 的符号一致性 ===
+三段都有足够样本的币对: 182
+  lift1: 均值 -0.089%  中位 -0.196%
+  lift2: 均值 +0.297%  中位 +0.208%
+  lift3: 均值 +0.024%  中位 +0.013%
+  三段同号的币对: 36 / 182 (20%)  [随机期望 25%]
+  三段每段 |lift| 都 > 0.5% 的币对: 23
+  源             响应                  段1%       段2%       段3%
+  BTCUSDT       ONTUSDT          2.677    0.556   -0.907
+  NEOUSDT       VETUSDT          2.462   -0.781    0.640
+  ADAUSDT       XLMUSDT          1.702    3.131    1.704
+  IOTAUSDT      ADAUSDT          1.453   -1.151   -1.257
+  IOTAUSDT      BTCUSDT         -1.401   -1.046   -0.692
+  ADAUSDT       VETUSDT          1.179   -0.804    0.831
+  NEOUSDT       TRXUSDT          1.154   -1.086    1.237
+  ETHUSDT       LTCUSDT         -1.074    0.531   -0.670
+  BNBUSDT       XRPUSDT          0.947    1.407    0.832
+  ETCUSDT       NEOUSDT         -0.940    2.253   -0.502
+  ONTUSDT       QTUMUSDT         0.921    2.324   -1.345
+  NEOUSDT       ONTUSDT          0.867   -1.024   -0.888
+  TRXUSDT       VETUSDT          0.784    2.195    0.613
+  BNBUSDT       XLMUSDT         -0.710    1.036    1.062
+  ETHUSDT       BTCUSDT         -0.634   -0.555   -0.797
+
+=== C) 二阶路径：A 冲击 -> C(t+1) -> B(t+2)，路径强度 ===
+可用于路径计算的边: 14520（一阶 14520 条）
+两侧都 > 0.5% 的边: 3109
+
+saved: C:\Users\sikaq\Desktop\中信证券\coinlab\evidence\cascade3.png

@@ -1,0 +1,36 @@
+file rows=331497  symbols=502
+bars/symbol: min=2  median=849  max=1000
+bars>= 800 的币数 = 256
+对齐后: 时间点=812  币数=256  区间 2024-07-26 .. 2026-10-15
+样本=811 币数=256  (K 线数会远大于独立样本；见纪要 §7.2)
+
+=== 特征值谱 vs 平行分析（随机对照）===
+PC1=128.1  PC2=4.1  PC3=3.9  PC4=3.4  PC5=2.8
+随机基线    PC1=2.4  PC2=2.3  PC3=2.3  PC4=2.3  PC5=2.3
+PC1 解释方差 = 50.1%  PC2 = 1.6%  PC3 = 1.5%
+超过随机基线的因子数 = 6
+
+=== PC1 / PC2 是不是「就是 BTC」===
+PC1 与 BTC 日收益相关 = +0.779
+PC2 与 BTC 日收益相关 = +0.230
+PC3 与 BTC 日收益相关 = +0.051
+PC1 载荷最高的 10 个币: GALAUSDT(0.08), GRTUSDT(0.08), BNTUSDT(0.08), THETAUSDT(0.08), WOOUSDT(0.08), ETCUSDT(0.08), YGGUSDT(0.08), ASTRUSDT(0.08), VETUSDT(0.08), ARKMUSDT(0.08)
+PC1 载荷最低的 10 个币: PAXGUSDT(0.01), PROMUSDT(0.02), OGUSDT(0.02), DEXEUSDT(0.02), TRXUSDT(0.03), JSTUSDT(0.03), SUNUSDT(0.03), LSKUSDT(0.03), TNSRUSDT(0.03), ALPINEUSDT(0.03)
+
+各币对 PC1 的 R2: median=0.530  <0.3 的币数=35  <0.1 的币数=6
+对 PC1 解释力最低的 15 个币: PAXGUSDT, PROMUSDT, OGUSDT, DEXEUSDT, TRXUSDT, JSTUSDT, SUNUSDT, LSKUSDT, TNSRUSDT, ALPINEUSDT, AVAUSDT, ASRUSDT, ATMUSDT, STRAXUSDT, SYNUSDT
+
+=== 距离阈值 0.70 -> 10 簇；>=5 个币的簇 1 个 ===
+  簇1 (247个): 1000SATS, 1INCH, AAVE, ACE, ACH, ACM, ADA, ADX, AEVO, AGLD, AI, ALGO, ALICE, ALPINE, ALT, AMP, ANKR, APE, API3, APT, ARB, ARKM ...
+
+=== 距离阈值 0.50 -> 58 簇；>=5 个币的簇 3 个 ===
+  簇21 (177个): 1000SATS, 1INCH, AAVE, ACH, ADA, ADX, AEVO, AI, ALGO, ALICE, ALT, ANKR, APE, API3, APT, ARB, ARKM, ARPA, AR, ASTR, ATOM, AVAX ...
+  簇3 (8个): ACM, BAR, CITY, JUV, LAZIO, PORTO, PSG, SANTOS
+  簇1 (5个): JST, RSR, SUN, TRX, WIN
+
+=== 距离阈值 0.35 -> 144 簇；>=5 个币的簇 3 个 ===
+  簇77 (80个): 1INCH, AEVO, AI, ALT, ANKR, APT, ARB, ARKM, ASTR, ATOM, AVAX, BAND, BB, BEAMX, BNT, BOME, BONK, BTC, CELO, CHR, CHZ, CYBER ...
+  簇57 (6个): ADA, ALGO, HBAR, IOTA, XLM, XRP
+  簇76 (6个): AXS, ILV, MANA, RONIN, SAND, SLP
+
+saved: C:\Users\sikaq\Desktop\中信证券\coinlab\evidence\factors_1d.png

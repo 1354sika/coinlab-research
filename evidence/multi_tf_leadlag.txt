@@ -1,0 +1,92 @@
+原始 matrix 315360 x 60  17s
+
+============================================================================================
+【粒度 5m】T=315360 根  N=60 币   市场因子占方差 60.5%
+  lag=0 的对 = 2378 (67.2%)   lag≠0 = 1222 (34.5%)
+  对称性检验：lag=+1 有 444 对，lag=-1 有 444 对 —— 差值 0（越接近 0 越像噪声）
+  lag≠0 最强 8 对：
+  A            -> B               lag      corr
+  AVAXUSDT     -> WBETHUSDT        +4   -0.5570
+  WBETHUSDT    -> AVAXUSDT         -4   -0.5570
+  TRUMPUSDT    -> WBETHUSDT        +4   -0.4018
+  WBETHUSDT    -> TRUMPUSDT        -4   -0.4018
+  AVAXUSDT     -> ETHUSDT          -1   +0.3596
+  ETHUSDT      -> AVAXUSDT         +1   +0.3596
+  SOLUSDT      -> AVAXUSDT         +1   +0.3479
+  AVAXUSDT     -> SOLUSDT          -1   +0.3479
+  可交易性（最强对 AVAXUSDT->WBETHUSDT, lag=+4）：n=31536 同向率=49.8% 毛=-0.0101% 净maker=-0.0501% 净taker=-0.2101%
+
+============================================================================================
+【粒度 15m】T=105121 根  N=60 币   市场因子占方差 58.3%
+  lag=0 的对 = 2692 (76.0%)   lag≠0 = 908 (25.6%)
+  对称性检验：lag=+1 有 277 对，lag=-1 有 277 对 —— 差值 0（越接近 0 越像噪声）
+  lag≠0 最强 8 对：
+  A            -> B               lag      corr
+  HOLOUSDT     -> WBETHUSDT        +1   +0.4505
+  WBETHUSDT    -> HOLOUSDT         -1   +0.4505
+  THEUSDT      -> WBETHUSDT        +1   +0.3600
+  WBETHUSDT    -> THEUSDT          -1   +0.3600
+  WBETHUSDT    -> ETHUSDT          -2   +0.3031
+  ETHUSDT      -> WBETHUSDT        +2   +0.3031
+  BTCUSDT      -> WBETHUSDT        +1   -0.2794
+  WBETHUSDT    -> BTCUSDT          -1   -0.2794
+  可交易性（最强对 HOLOUSDT->WBETHUSDT, lag=+1）：n=10512 同向率=50.2% 毛=+0.0643% 净maker=+0.0243% 净taker=-0.1357%
+
+============================================================================================
+【粒度 1h】T=26281 根  N=60 币   市场因子占方差 62.4%
+  lag=0 的对 = 2948 (83.3%)   lag≠0 = 652 (18.4%)
+  对称性检验：lag=+1 有 109 对，lag=-1 有 109 对 —— 差值 0（越接近 0 越像噪声）
+  lag≠0 最强 8 对：
+  A            -> B               lag      corr
+  ERAUSDT      -> WALUSDT          +2   +0.0520
+  WALUSDT      -> ERAUSDT          -2   +0.0520
+  LINEAUSDT    -> BERAUSDT         -4   +0.0510
+  BERAUSDT     -> LINEAUSDT        +4   +0.0510
+  REUSDT       -> 2ZUSDT           -1   -0.0407
+  2ZUSDT       -> REUSDT           +1   -0.0407
+  TRUMPUSDT    -> REUSDT           -3   +0.0398
+  REUSDT       -> TRUMPUSDT        +3   +0.0398
+  可交易性（最强对 ERAUSDT->WALUSDT, lag=+2）：n=2628 同向率=41.1% 毛=+0.0285% 净maker=-0.0115% 净taker=-0.1715%
+
+============================================================================================
+【粒度 4h】T=6571 根  N=60 币   市场因子占方差 62.5%
+  lag=0 的对 = 2418 (68.3%)   lag≠0 = 1182 (33.4%)
+  对称性检验：lag=+1 有 161 对，lag=-1 有 161 对 —— 差值 0（越接近 0 越像噪声）
+  lag≠0 最强 8 对：
+  A            -> B               lag      corr
+  ERAUSDT      -> MMTUSDT          -3   +0.2226
+  MMTUSDT      -> ERAUSDT          +3   +0.2226
+  PNUTUSDT     -> PEPEUSDT         +3   +0.1672
+  PEPEUSDT     -> PNUTUSDT         -3   +0.1672
+  ERAUSDT      -> NIGHTUSDT        -2   -0.1224
+  NIGHTUSDT    -> ERAUSDT          +2   -0.1224
+  2ZUSDT       -> MMTUSDT          -1   +0.1009
+  MMTUSDT      -> 2ZUSDT           +1   +0.1009
+  可交易性（最强对 ERAUSDT->MMTUSDT, lag=-3）：n=657 同向率=38.8% 毛=+0.4809% 净maker=+0.4409% 净taker=+0.2809%
+
+============================================================================================
+【粒度 1d】T=1096 根  N=60 币   市场因子占方差 60.9%
+  lag=0 的对 = 1676 (47.3%)   lag≠0 = 1924 (54.4%)
+  对称性检验：lag=+1 有 253 对，lag=-1 有 253 对 —— 差值 0（越接近 0 越像噪声）
+  lag≠0 最强 8 对：
+  A            -> B               lag      corr
+  PNUTUSDT     -> XLMUSDT          +3   +0.3205
+  XLMUSDT      -> PNUTUSDT         -3   +0.3205
+  TRXUSDT      -> LINKUSDT         -1   +0.2696
+  LINKUSDT     -> TRXUSDT          +1   +0.2696
+  SENTUSDT     -> REUSDT           +3   +0.2421
+  REUSDT       -> SENTUSDT         -3   +0.2421
+  PIXELUSDT    -> TRUMPUSDT        +2   +0.2093
+  TRUMPUSDT    -> PIXELUSDT        -2   +0.2093
+  可交易性（最强对 PNUTUSDT->XLMUSDT, lag=+3）：n=110 同向率=52.7% 毛=+1.1237% 净maker=+1.0837% 净taker=+0.9237%
+
+============================================================================================
+【汇总：各粒度对比】
+  粒度           对数    lag0占比%    lag+1    lag-1 最强对                          corr%    净maker%
+  5m         3540      67.2%      444      444 AVAXUS->WBETHU(lag+4)      -55.70   -0.0501
+  15m        3540      76.0%      277      277 HOLOUS->WBETHU(lag+1)       45.05   +0.0243
+  1h         3540      83.3%      109      109 ERAUSD->WALUSD(lag+2)        5.20   -0.0115
+  4h         3540      68.3%      161      161 ERAUSD->MMTUSD(lag-3)       22.26   +0.4409
+  1d         3540      47.3%      253      253 PNUTUS->XLMUSD(lag+3)       32.05   +1.0837
+
+saved: D:\中信证券\coinlab\evidence\multi_tf_leadlag.png

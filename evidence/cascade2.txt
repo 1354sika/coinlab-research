@@ -1,0 +1,63 @@
+样本 3228 天；上市 >= 2000 天的长期币 121 个
+币池: 1INCHUSDT, AAVEUSDT, ACMUSDT, ADAUSDT, ALGOUSDT, ALICEUSDT, ANKRUSDT, ARPAUSDT, ASRUSDT, ATMUSDT, ATOMUSDT, AUDIOUSDT ...
+市场中性化完成（超额收益 = ret - 当日全市场均值）
+
+=== 严格版结果：共检验 14520 对（长期币、共同交易日 >= 800）===
+  p < 0.001：实际 0 对，随机期望 14.5 对  —— 与随机无异
+  p < 0.010：实际 525 对，随机期望 145.2 对  —— 超出
+  p < 0.050：实际 1820 对，随机期望 726.0 对  —— 超出
+
+=== p 最小的 20 对 ===
+源             响应                   超额%       p值     冲击数     共同天数
+SNXUSDT       CVCUSDT           3.336   0.0050      64     2133
+HBARUSDT      VETUSDT           1.564   0.0050      78     2572
+OGNUSDT       BTCUSDT          -0.961   0.0050      75     2470
+DASHUSDT      ZECUSDT           2.480   0.0050      83     2757
+SOLUSDT       ALGOUSDT          1.374   0.0050      68     2255
+OGNUSDT       PAXGUSDT         -2.014   0.0050      68     2238
+SUSHIUSDT     UNIUSDT          -1.503   0.0050      67     2218
+ASRUSDT       AAVEUSDT         -1.674   0.0050      64     2114
+DASHUSDT      DUSKUSDT          1.870   0.0050      80     2641
+HOTUSDT       BTCUSDT          -0.953   0.0050      84     2795
+HBARUSDT      ADAUSDT           1.198   0.0050      78     2572
+LTCUSDT       DGBUSDT           1.930   0.0050      69     2277
+TKOUSDT       BNBUSDT           1.007   0.0050      61     2016
+XLMUSDT       ROSEUSDT         -1.570   0.0050      65     2155
+ADAUSDT       HOTUSDT           1.545   0.0050      84     2795
+ATOMUSDT      LUNAUSDT          3.365   0.0050      67     2226
+VTHOUSDT      AAVEUSDT         -1.562   0.0050      66     2190
+CELRUSDT      AUDIOUSDT         2.468   0.0050      66     2182
+CHZUSDT       CELRUSDT          1.256   0.0050      78     2595
+CHZUSDT       CHRUSDT           1.641   0.0050      71     2351
+
+=== 非对称性 ===
+可配对比较 14520 对；|A->B 减 B->A| 中位 0.6621 百分点，均值 0.8251 百分点
+
+=== 谁最能带动（作为源，平均次日超额 %），只在长期币里 ===
+  DASHUSDT        +0.185
+  AVAUSDT         +0.141
+  DCRUSDT         +0.110
+  ZILUSDT         +0.100
+  QTUMUSDT        +0.098
+  COMPUSDT        +0.098
+  ONTUSDT         +0.076
+  VTHOUSDT        +0.071
+  TRBUSDT         +0.063
+  LINKUSDT        +0.058
+  SNXUSDT         +0.056
+  ONGUSDT         +0.052
+=== 谁最容易被带动（作为响应方）===
+  SANDUSDT        +0.354
+  ONEUSDT         +0.352
+  VTHOUSDT        +0.332
+  DOGEUSDT        +0.328
+  AXSUSDT         +0.320
+  CHRUSDT         +0.277
+  ANKRUSDT        +0.268
+  CTSIUSDT        +0.263
+  HOTUSDT         +0.253
+  MANAUSDT        +0.236
+  XVSUSDT         +0.232
+  CELRUSDT        +0.218
+
+saved: C:\Users\sikaq\Desktop\中信证券\coinlab\evidence\cascade2.png

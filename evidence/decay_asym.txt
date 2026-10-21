@@ -1,0 +1,23 @@
+矩阵 86403 分钟 x 100 币
+共同冲击（全市场平均|收益| > 0.1803%）: 4316 次
+
+=== 1) 衰减比 = 冲击后 k 分钟收益 / 冲击当时收益（1.0=完全持续，0=立刻结束）===
+滞后               中位         均值        P10        P90
+     1m      0.000      0.091     -1.002      1.264
+     2m      0.000      0.112     -1.498      1.893
+     3m      0.000      0.143     -1.816      2.085
+     5m      0.000      0.145     -2.284      2.731
+    10m      0.000      0.136     -3.218      3.578
+    30m     -0.011      0.025     -5.433      5.761
+
+=== 2) 各币的持续度（冲击后 5 分钟内沿方向的累计收益 / 冲击当时）===
+  可估币数 100；持续度 中位 0.001  最小 -0.500（RLUSDUSDT）  最大 0.101（SUSDT）
+  持续度最慢的 10 个币: RLUSDUSDT, ZECUSDT, ETHUSDT, XRPUSDT, AVAXUSDT, DOGEUSDT, ORDIUSDT, AAVEUSDT, PENGUUSDT, SUIUSDT
+  持续度最快的 10 个币: NEIROUSDT, MANTAUSDT, BNBUSDT, DYDXUSDT, ZENUSDT, CFXUSDT, DOGSUSDT, VETUSDT, IOUSDT, SUSDT
+
+=== 3) 可套利检验：按历史持续度分组，做多慢组 / 做空快组（无前视，扣费）===
+费率                  交易数       毛收益/次%       净收益/次%      总净收益%
+taker 0.10%        1407     -0.0000%     -0.0000%     -90.91%
+maker 0.02%        1407     -0.0000%     -0.0000%     -38.10%
+
+saved: C:\Users\sikaq\Desktop\中信证券\coinlab\evidence\decay_asym.png

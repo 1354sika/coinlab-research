@@ -1,0 +1,30 @@
+symbols_usdt.csv 符号数 = 502
+exchangeInfo: 5.90s symbols=3729
+字段样例 key: allowTrailingStop,allowedSelfTradePreventionModes,amendAllowed,baseAsset,baseAssetPrecision,baseCommissionPrecision,cancelReplaceAllowed,defaultSelfTradePreventionMode,filters,icebergAllowed,isMarginTradingAllowed,isSpotTradingAllowed,ocoAllowed,opoAllowed,orderTypes,otoAllowed,pegInstructionsAllowed,permissionSets,permissions,quoteAsset,quoteAssetPrecision,quoteCommissionPrecision,quoteOrderQtyMarketAllowed,quotePrecision,status,symbol
+onboardDate 存在? False
+TRADING 按计价资产: USDT=511  TRY=310  USDC=256  U=48  BTC=38  FDUSD=32  USD1=31  EUR=29
+
+=== 探测每个币的首根 1m K 线（8 并发）===
+完成 502 个，成功 502，用时 22.1s -> 22.76 请求/秒
+
+=== 估算 ===
+总行数 = 776,914,182 行
+总字节 = 108.8 GB
+请求数 = 776,914 次
+年限分布: <=1年 133, 1-3年 154, 3-6年 124, >6年 91
+最早上市 5 个:
+  BTCUSDT        2017-08-17  9.2 年  4581622 行  0.64 GB
+  ETHUSDT        2017-08-17  9.2 年  4581622 行  0.64 GB
+  BNBUSDT        2017-11-06  9.0 年  4470819 行  0.63 GB
+  NEOUSDT        2017-11-20  8.9 年  4451679 行  0.62 GB
+  LTCUSDT        2017-12-13  8.9 年  4420224 行  0.62 GB
+最晚上市 5 个:
+  RWUSDUSDT      2026-10-13  0.01 年  6802 行
+  BBBUSDT        2026-10-14  0.01 年  5206 行
+  MDBBUSDT       2026-10-14  0.01 年  5206 行
+  PENGBUSDT      2026-10-14  0.01 年  5206 行
+  UVXYBUSDT      2026-10-14  0.01 年  5206 行
+
+=== 下载吞吐实测（20 次 × 1000 根）===
+单线程 2.29 请求/秒  0.00 MB/s  (1.0 KB/请求)
+=> 单线程预计总耗时 94.3 小时；8 并发理论 11.8 小时（受 6000 weight/min 限制）

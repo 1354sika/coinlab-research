@@ -1,0 +1,70 @@
+长期币 121 个；样本 3228 天（2017-12-14 .. 2026-10-15）
+  状态[全样本] 天数 = 3228
+  状态[市场大跌日(<=5%)] 天数 = 162
+  状态[高波动期] 天数 = 1599
+  状态[低波动期] 天数 = 1600
+
+=== 1) 条件传导：各市场状态下「源冲击 -> 次日响应」的 lift 分布 ===
+状态                       对数         中位%         均值% |lift|>1%对数    最强lift%
+全样本                   14520     -0.084     -0.016        2249      6.176
+市场大跌日(<=5%)               0  (样本不足)
+高波动期                  14520     -0.157     -0.033        5223     12.645
+低波动期                  14520     -0.086     -0.001        2309      6.682
+
+  [全样本] |lift| 最大的 8 对：
+    STRAXUSDT     -> DOGEUSDT       +6.176%  (冲击65次/共同2148天)
+    ALGOUSDT      -> VTHOUSDT       +5.885%  (冲击69次/共同2280天)
+    UNIUSDT       -> DOGEUSDT       +5.808%  (冲击67次/共同2218天)
+    RUNEUSDT      -> DOGEUSDT       +5.739%  (冲击67次/共同2231天)
+    AAVEUSDT      -> DOGEUSDT       +5.212%  (冲击66次/共同2190天)
+    EGLDUSDT      -> DOGEUSDT       +5.121%  (冲击67次/共同2232天)
+    AVAUSDT       -> ONGUSDT        +4.995%  (冲击65次/共同2150天)
+    ZRXUSDT       -> DOGEUSDT       +4.913%  (冲击80次/共同2658天)
+
+  [高波动期] |lift| 最大的 8 对：
+    UNIUSDT       -> DOGEUSDT      +12.645%  (冲击32次/共同1062天)
+    ALGOUSDT      -> VTHOUSDT      +12.219%  (冲击33次/共同1086天)
+    AAVEUSDT      -> DOGEUSDT      +11.995%  (冲击31次/共同1034天)
+    ZRXUSDT       -> DOGEUSDT      +11.078%  (冲击37次/共同1209天)
+    RIFUSDT       -> ONGUSDT       +10.826%  (冲击30次/共同975天)
+    STRAXUSDT     -> DOGEUSDT      +10.776%  (冲击31次/共同1015天)
+    DCRUSDT       -> DOGEUSDT      +10.725%  (冲击33次/共同1086天)
+    PAXGUSDT      -> ONGUSDT       +10.411%  (冲击33次/共同1082天)
+
+  [低波动期] |lift| 最大的 8 对：
+    SCUSDT        -> LSKUSDT        +6.682%  (冲击37次/共同1205天)
+    ZENUSDT       -> CVCUSDT        +6.145%  (冲击34次/共同1107天)
+    NEOUSDT       -> LUNAUSDT       +5.860%  (冲击35次/共同1159天)
+    AAVEUSDT      -> CVCUSDT        +5.748%  (冲击32次/共同1058天)
+    AVAUSDT       -> LSKUSDT        +5.541%  (冲击34次/共同1131天)
+    ALICEUSDT     -> MANAUSDT       +5.461%  (冲击34次/共同1131天)
+    SNXUSDT       -> CVCUSDT        +5.272%  (冲击34次/共同1104天)
+    FTTUSDT       -> CFXUSDT        +5.210%  (冲击28次/共同903天)
+
+=== 2) 非线性：Spearman 秩相关 vs Pearson 线性相关（超额收益）===
+Pearson 中位 -0.008；Spearman 中位 0.033
+Spearman - Pearson 的中位差 0.0367；|差|>0.05 的币对数 3098 / 7260
+  Spearman 明显高于 Pearson（非线性单调关系更强）的 top 8：
+    RSRUSDT       TRXUSDT       Pearson +0.163  Spearman -0.180  差 -0.343
+    DOGEUSDT      XRPUSDT       Pearson +0.032  Spearman +0.372  差 +0.340
+    ONGUSDT       PUNDIXUSDT    Pearson +0.058  Spearman +0.367  差 +0.309
+    HIVEUSDT      PUNDIXUSDT    Pearson +0.111  Spearman +0.383  差 +0.272
+    BTCUSDT       DOGEUSDT      Pearson +0.108  Spearman +0.374  差 +0.266
+    MBLUSDT       MTLUSDT       Pearson +0.065  Spearman +0.326  差 +0.261
+    ONGUSDT       STRAXUSDT     Pearson +0.071  Spearman +0.331  差 +0.261
+    ONGUSDT       SCUSDT        Pearson +0.045  Spearman +0.305  差 +0.260
+
+=== 3) 尾部依赖：下尾共现比（>1 = 一起崩）===
+下尾共现比：中位 2.09，>1.5 的币对数 6426 / 7260
+  （若完全独立，该比值应=1.00）
+  共现比最高的 8 对：
+    JUVUSDT       PSGUSDT       共现比 8.25
+    BARUSDT       PSGUSDT       共现比 7.84
+    ASRUSDT       ATMUSDT       共现比 7.83
+    ATMUSDT       JUVUSDT       共现比 7.79
+    BARUSDT       JUVUSDT       共现比 7.77
+    ACMUSDT       BARUSDT       共现比 7.64
+    ACMUSDT       ATMUSDT       共现比 7.61
+    ACMUSDT       JUVUSDT       共现比 7.58
+
+saved: C:\Users\sikaq\Desktop\中信证券\coinlab\evidence\cond_nonlin.png

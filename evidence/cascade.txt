@@ -1,0 +1,78 @@
+原始: 3228 天 x 502 币  2017-12-14 .. 2026-10-15
+剔除「日收益=0 占比>40%」的资产 1 个（代币化股票/ETF 类），剩余 501 币
+  被剔除样例: RWUSDUSDT
+市场中性化: 冲击与响应均用超额收益 = ret - 当日全市场均值
+有效冲击源 234 个币（冲击次数中位 61）；可统计币对 109187
+
+=== 置换检验结果（对 |lift| 最大的 300 对做 500 次重采样）===
+  p < 0.001 的币对数：0 / 300（随机对照下期望 0）
+  p < 0.010 的币对数：176 / 300（随机对照下期望 3）
+  p < 0.050 的币对数：275 / 300（随机对照下期望 15）
+
+=== p 最小的 20 对（源 -> 响应）===
+源              响应                    超额%        p值    冲击次数
+TKOUSDT        ALLOUSDT          95.524    0.0020      61
+UMAUSDT        ESPUSDT           73.704    0.0020      67
+ACHUSDT        SNXXBUSDT         70.358    0.0020      53
+DOGEUSDT       PNUTUSDT          52.659    0.0020      80
+ACHUSDT        MUUBUSDT          45.742    0.0020      53
+CTKUSDT        ESPUSDT           45.407    0.0020      66
+BTCUSDT        GIGGLEUSDT        40.644    0.0020      97
+ANKRUSDT       PNUTUSDT          38.434    0.0020      80
+ENSUSDT        MUBARAKUSDT       31.265    0.0020      54
+PEPEUSDT       MARSCOINUSDT      37.872    0.0020      38
+ACHUSDT        SNDKBUSDT         32.167    0.0020      53
+IOTXUSDT       BMTUSDT           28.330    0.0020      76
+SOLUSDT        PROVEUSDT         29.297    0.0020      68
+PSGUSDT        GENIUSUSDT       -28.428    0.0020      64
+NEXOUSDT       ZKPUSDT           29.581    0.0020      49
+ACHUSDT        NBISBUSDT         29.914    0.0020      53
+ACMUSDT        BMNRBUSDT         13.271    0.0020      62
+ENSUSDT        BANKUSDT          26.086    0.0020      54
+ETHUSDT        MANTRAUSDT       -13.303    0.0020      97
+LINKUSDT       SOPHUSDT          13.320    0.0020      85
+
+=== 谁最能带动别人（作为源，次日全场平均超额 %%%%）===
+  ACHUSDT           1.388
+  STRAXUSDT         0.470
+  BONKUSDT          0.468
+  CHRUSDT           0.374
+  XNOUSDT           0.361
+  NMRUSDT           0.359
+  IMXUSDT           0.358
+  SLPUSDT           0.351
+  SUNUSDT           0.326
+  CTKUSDT           0.291
+  BCHUSDT           0.282
+  MAGICUSDT         0.274
+=== 谁最容易被带动（作为响应方）===
+  PNUTUSDT          1.310
+  MUBARAKUSDT       1.053
+  FFUSDT            0.882
+  0GUSDT            0.859
+  PROVEUSDT         0.814
+  MARSCOINUSDT      0.810
+  SOXSBUSDT         0.709
+  GIGGLEUSDT        0.608
+  MITOUSDT          0.594
+  ALLOUSDT          0.499
+  MORPHOUSDT        0.497
+  BARDUSDT          0.494
+
+=== 非对称性 ===
+全部 27261 对的中位 |A->B - B->A| = 0.7062 百分点
+最强的 12 对不对称：
+  CHZUSDT       -> ORDIUSDT         10.871 vs    -0.597  差  11.468
+  ENJUSDT       -> ORDIUSDT          9.264 vs    -1.871  差  11.135
+  MANAUSDT      -> USTCUSDT          9.307 vs    -0.418  差   9.725
+  TIAUSDT       -> YFIUSDT          -0.548 vs     8.926  差  -9.474
+  CTSIUSDT      -> ORDIUSDT          7.982 vs    -1.026  差   9.008
+  CHRUSDT       -> IDUSDT            7.781 vs    -0.482  差   8.263
+  MBLUSDT       -> REQUSDT           7.436 vs    -0.598  差   8.034
+  REQUSDT       -> TLMUSDT          -0.380 vs     7.645  差  -8.024
+  OGNUSDT       -> REQUSDT           7.110 vs    -0.825  差   7.935
+  HIVEUSDT      -> REQUSDT           6.058 vs    -1.843  差   7.901
+  CELRUSDT      -> ORDIUSDT          7.954 vs     0.085  差   7.869
+  ALICEUSDT     -> REQUSDT           7.564 vs     0.175  差   7.389
+
+saved: C:\Users\sikaq\Desktop\中信证券\coinlab\evidence\cascade.png

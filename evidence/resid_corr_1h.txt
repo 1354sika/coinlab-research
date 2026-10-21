@@ -1,0 +1,53 @@
+bars=8760  2025-10-15 04:00:00 .. 2026-10-15 03:00:00
+
+=== 每币对 BTC/ETH 的回归（解释力 R2）===
+   symbol  beta_BTC  beta_ETH     R2  resid_vol  total_vol
+  SOLUSDT    0.5621    0.5795 0.7597     0.0034     0.0070
+  BNBUSDT    0.4312    0.3473 0.6874     0.0028     0.0049
+ DOGEUSDT    0.4776    0.6182 0.6729     0.0042     0.0073
+  XRPUSDT    0.5635    0.4817 0.6455     0.0041     0.0069
+ AVAXUSDT    0.4262    0.6608 0.6088     0.0048     0.0077
+  SUIUSDT    0.6045    0.7158 0.6034     0.0058     0.0092
+ PEPEUSDT    0.5143    0.7746 0.5364     0.0066     0.0097
+  UNIUSDT    0.3785    0.8046 0.4212     0.0079     0.0103
+  ENAUSDT    0.4799    0.8712 0.4170     0.0089     0.0117
+ NEARUSDT    0.5226    0.6747 0.3520     0.0088     0.0110
+ PUMPUSDT    0.7041    0.7674 0.3478     0.0108     0.0134
+  WALUSDT    0.5204    0.6480 0.2793     0.0102     0.0120
+  ZECUSDT    0.7496    0.5868 0.2272     0.0129     0.0147
+  TRXUSDT    0.0437    0.1165 0.1536     0.0022     0.0024
+ XAUTUSDT    0.0669    0.1167 0.1339     0.0022     0.0024
+SPCXBUSDT    0.1555    0.1662 0.0290     0.0083     0.0084
+RLUSDUSDT   -0.0014    0.0004 0.0024     0.0001     0.0001
+    UUSDT   -0.0010    0.0011 0.0013     0.0001     0.0001
+
+R2: median=0.385  min=0.001  max=0.760
+R2 < 0.2 的币（BTC/ETH 解释不了）: TRXUSDT, XAUTUSDT, SPCXBUSDT, RLUSDUSDT, UUSDT
+
+=== 残差相关（扣掉 BTC+ETH 之后还剩多少共同运动）===
+pairs=153   mean=0.1382  median=0.1296  p90=0.3126  max=0.5084
+noise baseline: mean=-0.0003  p95(|.|)=0.0336
+
+=== 残差相关最强的 20 对 ===
+  DOGEUSDT     XRPUSDT      +0.5084
+  DOGEUSDT     PEPEUSDT     +0.4688
+  DOGEUSDT     SUIUSDT      +0.4677
+  SUIUSDT      XRPUSDT      +0.4327
+  SOLUSDT      SUIUSDT      +0.4285
+  DOGEUSDT     SOLUSDT      +0.4086
+  ENAUSDT      SUIUSDT      +0.3935
+  SOLUSDT      XRPUSDT      +0.3921
+  AVAXUSDT     SUIUSDT      +0.3917
+  NEARUSDT     SUIUSDT      +0.3755
+  PEPEUSDT     SUIUSDT      +0.3579
+  BNBUSDT      DOGEUSDT     +0.3558
+  BNBUSDT      SUIUSDT      +0.3344
+  BNBUSDT      SOLUSDT      +0.3251
+  AVAXUSDT     DOGEUSDT     +0.3174
+  PEPEUSDT     XRPUSDT      +0.3134
+  ENAUSDT      NEARUSDT     +0.3094
+  AVAXUSDT     SOLUSDT      +0.2941
+  AVAXUSDT     NEARUSDT     +0.2918
+  SUIUSDT      WALUSDT      +0.2891
+
+saved: C:\Users\sikaq\Desktop\中信证券\coinlab\evidence\resid_corr_1h.png

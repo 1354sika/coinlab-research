@@ -1,0 +1,66 @@
+matrix 315360 x 60   17s
+市场因子方差占比 = 60.5%
+计算 lag 相关矩阵（13 个 lag）...
+  lag=-6 完成  18s
+  lag=-5 完成  19s
+  lag=-4 完成  19s
+  lag=-3 完成  19s
+  lag=-2 完成  20s
+  lag=-1 完成  20s
+  lag=+0 完成  21s
+  lag=+1 完成  21s
+  lag=+2 完成  22s
+  lag=+3 完成  22s
+  lag=+4 完成  22s
+  lag=+5 完成  23s
+  lag=+6 完成  23s
+
+============================================================================================
+【一】最强 lag 的分布（3540 个币对）
+       lag         对数        占比%
+        -6          5      0.40%
+        -5         52      4.19%
+        -4         64      5.15%
+        -3         18      1.45%
+        -2         55      4.43%
+        -1        427     34.38%
+        +1        427     34.38%
+        +2         55      4.43%
+        +3         18      1.45%
+        +4         64      5.15%
+        +5         52      4.19%
+        +6          5      0.40%
+  lag=0 的对数 = 2358（占全部 3540 对的 66.6%）
+
+【二】lag≠0 且 |相关| 最强的 20 对
+  A(领先)        -> B(落后)             lag     corr
+  WBETHUSDT    -> TRUMPUSDT          -5  +0.6286
+  TRUMPUSDT    -> WBETHUSDT          +5  +0.6286
+  WBETHUSDT    -> AVAXUSDT           -4  -0.5570
+  AVAXUSDT     -> WBETHUSDT          +4  -0.5570
+  WBETHUSDT    -> LINEAUSDT          -5  +0.4875
+  LINEAUSDT    -> WBETHUSDT          +5  +0.4875
+  WBETHUSDT    -> ENAUSDT            -5  +0.3997
+  ENAUSDT      -> WBETHUSDT          +5  +0.3997
+  AVAXUSDT     -> ETHUSDT            -1  +0.3596
+  ETHUSDT      -> AVAXUSDT           +1  +0.3596
+  WLDUSDT      -> WBETHUSDT          +5  +0.3593
+  WBETHUSDT    -> WLDUSDT            -5  +0.3593
+  SOLUSDT      -> AVAXUSDT           +1  +0.3479
+  AVAXUSDT     -> SOLUSDT            -1  +0.3479
+  TRUMPUSDT    -> ETHUSDT            -1  +0.3284
+  ETHUSDT      -> TRUMPUSDT          +1  +0.3284
+  WBETHUSDT    -> ETHFIUSDT          -5  +0.3265
+  ETHFIUSDT    -> WBETHUSDT          +5  +0.3265
+  WBETHUSDT    -> HOLOUSDT           -4  +0.3187
+  HOLOUSDT     -> WBETHUSDT          +4  +0.3187
+
+【三】这些"领先关系"长期稳定吗？（第 4 节：可交易性）
+  说明：用最强领先对做检验 —— 领先方某一根大涨/大跌，落后方下一根跟不跟
+  WBETHUSDT ->TRUMPUSDT  lag=-5 corr=+0.6286  n=31536  同向率=23.1%  毛=+0.0031%  净maker=-0.0369%  净taker=-0.1969%
+  TRUMPUSDT ->WBETHUSDT  lag=+5 corr=+0.6286  n=31536  同向率=49.3%  毛=+0.0048%  净maker=-0.0352%  净taker=-0.1952%
+  WBETHUSDT ->AVAXUSDT   lag=-4 corr=-0.5570  n=31536  同向率=50.0%  毛=-0.0060%  净maker=-0.0460%  净taker=-0.2060%
+  AVAXUSDT  ->WBETHUSDT  lag=+4 corr=-0.5570  n=31536  同向率=49.8%  毛=-0.0101%  净maker=-0.0501%  净taker=-0.2101%
+  WBETHUSDT ->LINEAUSDT  lag=-5 corr=+0.4875  n=31536  同向率=10.8%  毛=+0.0023%  净maker=-0.0377%  净taker=-0.1977%
+
+saved: D:\中信证券\coinlab\evidence\deep_leadlag_5m.png

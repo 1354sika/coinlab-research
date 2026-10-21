@@ -1,0 +1,46 @@
+matrix 315360 x 60   18s
+
+============================================================================================
+【①】秩相关（Spearman）vs 皮尔逊 —— 单调非线性是否被线性低估
+  币对数 = 1770
+  |Spearman - Pearson| 中位 = 0.0929  均值 = 0.1850  >0.05 的占比 = 64.5%
+  |Spearman| 中位 = 0.1020   |Pearson| 中位 = 0.0383
+  → 秩相关普遍更弱/similar（若更强说明有单调非线性）
+
+【②】下尾共现 lift（A 在下尾 10%，B 也在下尾的概率 / 独立期望 0.01）
+  lift 中位 = 0.391  均值 = 0.598  P95 = 1.805  最大 = 6.045
+  lift 最高 10 对：
+  A            -> B                lift
+  ETHUSDT         WBETHUSDT       6.045
+  BTCUSDT         TRXUSDT         5.749
+  BTCUSDT         ETHUSDT         5.633
+  BTCUSDT         BNBUSDT         5.486
+  BNBUSDT         TRXUSDT         5.290
+  BTCUSDT         WBETHUSDT       4.614
+  ETHUSDT         BNBUSDT         4.549
+  ETHUSDT         TRXUSDT         4.524
+  TRXUSDT         WBETHUSDT       4.017
+  XRPUSDT         XLMUSDT         4.016
+  上尾 lift：中位 = 0.379  P95 = 1.709  最大 = 6.090
+
+【③】波动传导：A 的 |ret| 在上尾 10% 时，B 下一根 |ret| 是否变大
+  |ret| 提升倍数：中位 = 1.043  均值 = 1.083  P95 = 1.527
+  （>1 表示 A 剧烈波动时 B 下一根也更剧烈；但这里没有方向性 -> 不可直接交易）
+  注意：这一项即使成立也【没有方向】，无法直接变成买卖信号
+
+【④】条件收益：A 极端涨/跌后，B 下一根的收益（扣费后）
+  A            条件         -> B                  毛均值%     净maker%        n
+  PEPEUSDT     A 涨95%分位   -> WBETHUSDT      +0.0998%    +0.0598%     2530
+  WIFUSDT      A 跌5%分位    -> REUSDT         +0.0751%    +0.0351%     8247
+  SOLUSDT      A 涨95%分位   -> MMTUSDT        +0.0587%    +0.0187%     6026
+  SUIUSDT      A 跌5%分位    -> MMTUSDT        +0.0569%    +0.0169%     5035
+  NEIROUSDT    A 跌5%分位    -> CHIPUSDT       +0.0535%    +0.0135%     6843
+  WBETHUSDT    A 跌5%分位    -> REUSDT         -0.0528%    -0.0928%     7291
+  PEPEUSDT     A 跌5%分位    -> TRUMPUSDT      +0.0518%    +0.0118%     2626
+  MIRAUSDT     A 跌5%分位    -> WBETHUSDT      +0.0495%    +0.0095%     5529
+  BTCUSDT      A 涨95%分位   -> MMTUSDT        +0.0489%    +0.0089%     8447
+  XAUTUSDT     A 涨95%分位   -> MOVEUSDT       -0.0474%    -0.0874%     2921
+  MORPHOUSDT   A 跌5%分位    -> WBETHUSDT      +0.0473%    +0.0073%     5426
+  ACTUSDT      A 跌5%分位    -> REUSDT         +0.0470%    +0.0070%     8728
+
+saved: D:\中信证券\coinlab\evidence\nonlinear_deps.png

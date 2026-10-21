@@ -1,0 +1,158 @@
+====================================================================================================
+gambler_butterfly · 事件概率的跨币关联矩阵（蝴蝶效应）
+  异动定义：1h 收益 |ret| >= 5%   滞后档：[1, 3, 6, 12, 24, 48, 96]（5m 根）
+====================================================================================================
+币数 60   对齐矩阵 (315360, 60)   耗时 11s
+矩阵 315,360 行 x 60 币   耗时 11s
+
+====================================================================================================
+【UP】事件 = 1h 涨 >= 5%
+====================================================================================================
+  基础概率中位 0.23%（>0 的币 59 个）
+  --- 滞后 1 根（5 分钟）---
+         BTCUSDT -> BNBUSDT       lift=2102.400   （反向 BNBUSDT->BTCUSDT = 1752.000）
+         BNBUSDT -> BTCUSDT       lift=1752.000   （反向 BTCUSDT->BNBUSDT = 2102.400）
+       WBETHUSDT -> ETHUSDT       lift=1384.189   （反向 ETHUSDT->WBETHUSDT = 1371.130）
+         ETHUSDT -> WBETHUSDT     lift=1371.130   （反向 WBETHUSDT->ETHUSDT = 1384.189）
+         BTCUSDT -> WBETHUSDT     lift=848.795   （反向 WBETHUSDT->BTCUSDT = 652.919）
+         BTCUSDT -> ETHUSDT       lift=840.960   （反向 ETHUSDT->BTCUSDT = 630.720）
+       WBETHUSDT -> BTCUSDT       lift=652.919   （反向 BTCUSDT->WBETHUSDT = 848.795）
+         ETHUSDT -> BTCUSDT       lift=630.720   （反向 BTCUSDT->ETHUSDT = 840.960）
+    全矩阵 lift：中位 15.523  p90 74.096  p99 294.534  最大 2102.40
+  --- 滞后 3 根（15 分钟）---
+         BTCUSDT -> BNBUSDT       lift=1752.000   （反向 BNBUSDT->BTCUSDT = 1051.200）
+         BNBUSDT -> BTCUSDT       lift=1051.200   （反向 BTCUSDT->BNBUSDT = 1752.000）
+         ETHUSDT -> WBETHUSDT     lift=966.321   （反向 WBETHUSDT->ETHUSDT = 966.321）
+       WBETHUSDT -> ETHUSDT       lift=966.321   （反向 ETHUSDT->WBETHUSDT = 966.321）
+         BTCUSDT -> WBETHUSDT     lift=652.919   （反向 WBETHUSDT->BTCUSDT = 391.752）
+         BTCUSDT -> ETHUSDT       lift=630.720   （反向 ETHUSDT->BTCUSDT = 350.400）
+         BTCUSDT -> SOLUSDT       lift=499.320   （反向 SOLUSDT->BTCUSDT = 367.920）
+         BTCUSDT -> ADAUSDT       lift=460.577   （反向 ADAUSDT->BTCUSDT = 352.206）
+    全矩阵 lift：中位 11.083  p90 54.386  p99 230.690  最大 1752.00
+  --- 滞后 6 根（30 分钟）---
+         BTCUSDT -> BNBUSDT       lift=876.000   （反向 BNBUSDT->BTCUSDT = 525.600）
+         ETHUSDT -> WBETHUSDT     lift=548.452   （反向 WBETHUSDT->ETHUSDT = 509.277）
+         BNBUSDT -> BTCUSDT       lift=525.600   （反向 BTCUSDT->BNBUSDT = 876.000）
+       WBETHUSDT -> ETHUSDT       lift=509.277   （反向 ETHUSDT->WBETHUSDT = 548.452）
+         BTCUSDT -> WBETHUSDT     lift=326.460   （反向 WBETHUSDT->BTCUSDT = 130.584）
+         BTCUSDT -> SOLUSDT       lift=289.080   （反向 SOLUSDT->BTCUSDT = 183.960）
+         BNBUSDT -> WBETHUSDT     lift=261.168   （反向 WBETHUSDT->BNBUSDT = 163.230）
+        LINKUSDT -> WBETHUSDT     lift=210.619   （反向 WBETHUSDT->LINKUSDT = 134.796）
+    全矩阵 lift：中位 6.628  p90 34.494  p99 133.774  最大 876.00
+  --- 滞后 12 根（60 分钟）---
+         BNBUSDT -> TRXUSDT       lift=123.671   （反向 TRXUSDT->BNBUSDT =  0.000）
+         ADAUSDT -> WBETHUSDT     lift=90.870   （反向 WBETHUSDT->ADAUSDT = 25.242）
+         SOLUSDT -> WBETHUSDT     lift=78.350   （反向 WBETHUSDT->SOLUSDT =  4.897）
+         ADAUSDT -> ETHUSDT       lift=75.860   （反向 ETHUSDT->ADAUSDT = 21.674）
+         SOLUSDT -> ETHUSDT       lift=73.584   （反向 ETHUSDT->SOLUSDT =  5.256）
+        VANAUSDT -> BTCUSDT       lift=68.349   （反向 BTCUSDT->VANAUSDT = 13.670）
+        LINKUSDT -> WBETHUSDT     lift=67.398   （反向 WBETHUSDT->LINKUSDT = 25.274）
+         XRPUSDT -> WBETHUSDT     lift=65.549   （反向 WBETHUSDT->XRPUSDT =  7.712）
+    全矩阵 lift：中位 3.623  p90 13.532  p99 41.015  最大 123.67
+  --- 滞后 24 根（120 分钟）---
+       TRUMPUSDT -> BTCUSDT       lift=111.830   （反向 BTCUSDT->TRUMPUSDT =  0.000）
+         XRPUSDT -> BTCUSDT       lift=82.772   （反向 BTCUSDT->XRPUSDT =  0.000）
+         BTCUSDT -> WBETHUSDT     lift=65.292   （反向 WBETHUSDT->BTCUSDT =  0.000）
+         BNBUSDT -> WLFIUSDT      lift=61.835   （反向 WLFIUSDT->BNBUSDT =  0.000）
+         BNBUSDT -> MORPHOUSDT    lift=57.758   （反向 MORPHOUSDT->BNBUSDT =  0.000）
+         BTCUSDT -> SHIBUSDT      lift=56.745   （反向 SHIBUSDT->BTCUSDT =  0.000）
+         WALUSDT -> BNBUSDT       lift=50.057   （反向 BNBUSDT->WALUSDT = 50.057）
+         BNBUSDT -> WALUSDT       lift=50.057   （反向 WALUSDT->BNBUSDT = 50.057）
+    全矩阵 lift：中位 0.932  p90 6.758  p99 22.753  最大 111.83
+  --- 滞后 48 根（240 分钟）---
+       WBETHUSDT -> BNBUSDT       lift=130.584   （反向 BNBUSDT->WBETHUSDT =  0.000）
+      MORPHOUSDT -> BNBUSDT       lift=77.011   （反向 BNBUSDT->MORPHOUSDT = 57.758）
+         XRPUSDT -> TRXUSDT       lift=58.427   （反向 TRXUSDT->XRPUSDT =  0.000）
+         BNBUSDT -> MORPHOUSDT    lift=57.758   （反向 MORPHOUSDT->BNBUSDT = 77.011）
+       WBETHUSDT -> MORPHOUSDT    lift=50.225   （反向 MORPHOUSDT->WBETHUSDT =  0.000）
+       WBETHUSDT -> LINEAUSDT     lift=42.893   （反向 LINEAUSDT->WBETHUSDT =  0.000）
+        OPENUSDT -> BNBUSDT       lift=42.217   （反向 BNBUSDT->OPENUSDT =  0.000）
+         ERAUSDT -> NIGHTUSDT     lift=39.347   （反向 NIGHTUSDT->ERAUSDT = 15.134）
+    全矩阵 lift：中位 2.238  p90 9.173  p99 27.732  最大 130.58
+  --- 滞后 96 根（480 分钟）---
+         BTCUSDT -> TRUMPUSDT     lift=62.128   （反向 TRUMPUSDT->BTCUSDT = 12.426）
+         XRPUSDT -> TRXUSDT       lift=43.820   （反向 TRXUSDT->XRPUSDT =  0.000）
+         ERAUSDT -> NIGHTUSDT     lift=33.294   （反向 NIGHTUSDT->ERAUSDT =  3.027）
+          2ZUSDT -> OPENUSDT      lift=31.564   （反向 OPENUSDT->2ZUSDT =  1.973）
+         ERAUSDT -> MIRAUSDT      lift=28.795   （反向 MIRAUSDT->ERAUSDT = 13.198）
+          2ZUSDT -> HOLOUSDT      lift=28.271   （反向 HOLOUSDT->2ZUSDT = 11.780）
+        FOGOUSDT -> LINEAUSDT     lift=26.766   （反向 LINEAUSDT->FOGOUSDT =  0.000）
+        SHIBUSDT -> DOGEUSDT      lift=25.860   （反向 DOGEUSDT->SHIBUSDT = 16.994）
+    全矩阵 lift：中位 0.000  p90 4.702  p99 15.158  最大 62.13
+
+====================================================================================================
+【DN】事件 = 1h 跌 >= 5%
+====================================================================================================
+  基础概率中位 0.16%（>0 的币 59 个）
+  --- 滞后 1 根（5 分钟）---
+         BNBUSDT -> BTCUSDT       lift=2396.604   （反向 BTCUSDT->BNBUSDT = 2396.604）
+         BTCUSDT -> BNBUSDT       lift=2396.604   （反向 BNBUSDT->BTCUSDT = 2396.604）
+         ETHUSDT -> BTCUSDT       lift=2114.483   （反向 BTCUSDT->ETHUSDT = 2038.965）
+         BTCUSDT -> ETHUSDT       lift=2038.965   （反向 ETHUSDT->BTCUSDT = 2114.483）
+         BTCUSDT -> WBETHUSDT     lift=1978.065   （反向 WBETHUSDT->BTCUSDT = 1907.419）
+       WBETHUSDT -> BTCUSDT       lift=1907.419   （反向 BTCUSDT->WBETHUSDT = 1978.065）
+         ETHUSDT -> WBETHUSDT     lift=1710.100   （反向 WBETHUSDT->ETHUSDT = 1688.176）
+       WBETHUSDT -> ETHUSDT       lift=1688.176   （反向 ETHUSDT->WBETHUSDT = 1710.100）
+    全矩阵 lift：中位 60.097  p90 189.057  p99 539.800  最大 2396.60
+  --- 滞后 3 根（15 分钟）---
+         BTCUSDT -> BNBUSDT       lift=1735.472   （反向 BNBUSDT->BTCUSDT = 1570.189）
+         BTCUSDT -> ETHUSDT       lift=1585.862   （反向 ETHUSDT->BTCUSDT = 1359.310）
+         BNBUSDT -> BTCUSDT       lift=1570.189   （反向 BTCUSDT->BNBUSDT = 1735.472）
+         BTCUSDT -> WBETHUSDT     lift=1554.194   （反向 WBETHUSDT->BTCUSDT = 1200.968）
+         ETHUSDT -> BTCUSDT       lift=1359.310   （反向 BTCUSDT->ETHUSDT = 1585.862）
+       WBETHUSDT -> BTCUSDT       lift=1200.968   （反向 BTCUSDT->WBETHUSDT = 1554.194）
+         ETHUSDT -> BNBUSDT       lift=1179.779   （反向 BNBUSDT->ETHUSDT = 1102.837）
+         BNBUSDT -> WBETHUSDT     lift=1175.642   （反向 WBETHUSDT->BNBUSDT = 1127.657）
+    全矩阵 lift：中位 44.503  p90 146.251  p99 418.994  最大 1735.47
+  --- 滞后 6 根（30 分钟）---
+         BTCUSDT -> WBETHUSDT     lift=1130.323   （反向 WBETHUSDT->BTCUSDT = 494.516）
+         BTCUSDT -> BNBUSDT       lift=1074.340   （反向 BNBUSDT->BTCUSDT = 743.774）
+         BTCUSDT -> ETHUSDT       lift=906.207   （反向 ETHUSDT->BTCUSDT = 604.138）
+         BNBUSDT -> BTCUSDT       lift=743.774   （反向 BTCUSDT->BNBUSDT = 1074.340）
+         BNBUSDT -> WBETHUSDT     lift=743.774   （反向 WBETHUSDT->BNBUSDT = 671.795）
+         ETHUSDT -> BNBUSDT       lift=743.774   （反向 BNBUSDT->ETHUSDT = 641.184）
+         ETHUSDT -> WBETHUSDT     lift=679.655   （反向 WBETHUSDT->ETHUSDT = 526.185）
+       WBETHUSDT -> BNBUSDT       lift=671.795   （反向 BNBUSDT->WBETHUSDT = 743.774）
+    全矩阵 lift：中位 28.694  p90 88.323  p99 261.188  最大 1130.32
+  --- 滞后 12 根（60 分钟）---
+         BNBUSDT -> WBETHUSDT     lift=95.971   （反向 WBETHUSDT->BNBUSDT = 47.985）
+         XRPUSDT -> WBETHUSDT     lift=95.371   （反向 WBETHUSDT->XRPUSDT =  6.358）
+      MORPHOUSDT -> WBETHUSDT     lift=91.648   （反向 WBETHUSDT->MORPHOUSDT = 22.912）
+         XRPUSDT -> BNBUSDT       lift=89.253   （反向 BNBUSDT->XRPUSDT = 29.751）
+         ETHUSDT -> WBETHUSDT     lift=87.697   （反向 WBETHUSDT->ETHUSDT = 65.773）
+         ADAUSDT -> WBETHUSDT     lift=83.935   （反向 WBETHUSDT->ADAUSDT = 41.967）
+      MORPHOUSDT -> BNBUSDT       lift=80.408   （反向 BNBUSDT->MORPHOUSDT = 26.803）
+         ADAUSDT -> BNBUSDT       lift=78.550   （反向 BNBUSDT->ADAUSDT = 39.275）
+    全矩阵 lift：中位 5.034  p90 19.377  p99 44.986  最大 95.97
+  --- 滞后 24 根（120 分钟）---
+          2ZUSDT -> PUMPUSDT      lift=53.810   （反向 PUMPUSDT->2ZUSDT =  0.000）
+         TRXUSDT -> LINKUSDT      lift=51.866   （反向 LINKUSDT->TRXUSDT =  0.000）
+         TRXUSDT -> XRPUSDT       lift=47.069   （反向 XRPUSDT->TRXUSDT = 11.767）
+         WALUSDT -> HOLOUSDT      lift=35.410   （反向 HOLOUSDT->WALUSDT =  4.721）
+        AVNTUSDT -> FFUSDT        lift=30.986   （反向 FFUSDT->AVNTUSDT =  4.998）
+        SENTUSDT -> WALUSDT       lift=30.312   （反向 WALUSDT->SENTUSDT =  0.000）
+         TRXUSDT -> MOVEUSDT      lift=27.286   （反向 MOVEUSDT->TRXUSDT = 13.643）
+         XRPUSDT -> ETHUSDT       lift=27.186   （反向 ETHUSDT->XRPUSDT =  0.000）
+    全矩阵 lift：中位 0.000  p90 7.519  p99 19.023  最大 53.81
+  --- 滞后 48 根（240 分钟）---
+         BTCUSDT -> SOLUSDT       lift=131.729   （反向 SOLUSDT->BTCUSDT =  0.000）
+         BTCUSDT -> PUMPUSDT      lift=58.792   （反向 PUMPUSDT->BTCUSDT =  0.000）
+      MORPHOUSDT -> PUMPUSDT      lift=57.203   （反向 PUMPUSDT->MORPHOUSDT =  0.000）
+         BTCUSDT -> PEPEUSDT      lift=45.310   （反向 PEPEUSDT->BTCUSDT = 45.310）
+        PEPEUSDT -> BTCUSDT       lift=45.310   （反向 BTCUSDT->PEPEUSDT = 45.310）
+         BNBUSDT -> SOLUSDT       lift=44.738   （反向 SOLUSDT->BNBUSDT =  0.000）
+         WALUSDT -> REUSDT        lift=43.232   （反向 REUSDT->WALUSDT =  0.000）
+      MORPHOUSDT -> TRUMPUSDT     lift=41.658   （反向 TRUMPUSDT->MORPHOUSDT =  0.000）
+    全矩阵 lift：中位 1.057  p90 8.120  p99 23.607  最大 131.73
+  --- 滞后 96 根（480 分钟）---
+        MOVEUSDT -> TRXUSDT       lift=47.751   （反向 TRXUSDT->MOVEUSDT = 40.929）
+         TRXUSDT -> BNBUSDT       lift=44.404   （反向 BNBUSDT->TRXUSDT =  0.000）
+         TRXUSDT -> MOVEUSDT      lift=40.929   （反向 MOVEUSDT->TRXUSDT = 47.751）
+       TRUMPUSDT -> BTCUSDT       lift=38.534   （反向 BTCUSDT->TRUMPUSDT = 12.845）
+         NOTUSDT -> ETHUSDT       lift=31.797   （反向 ETHUSDT->NOTUSDT =  2.650）
+         NOTUSDT -> WBETHUSDT     lift=29.745   （反向 WBETHUSDT->NOTUSDT =  2.479）
+         NOTUSDT -> BNBUSDT       lift=28.997   （反向 BNBUSDT->NOTUSDT =  0.000）
+        WLFIUSDT -> SENTUSDT      lift=28.835   （反向 SENTUSDT->WLFIUSDT =  0.000）
+    全矩阵 lift：中位 0.000  p90 5.830  p99 18.274  最大 47.75
+
+TOTAL 13s

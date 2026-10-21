@@ -1,0 +1,34 @@
+矩阵 86403 分钟 x 100 币
+相对放量 RVOL 定义：本分钟成交额 / 过去 60 分钟中位
+  RVOL 中位 0.99；P99 90.74；最大 1886864.4
+
+=== A/B) 放量传导：某币 RVOL 突增（>99分位）-> 之后 k 分钟 ===
+滞后            有效源    价格lift中位%       价格P99%    波动lift中位%
+   1m        100      0.0011%      0.0204%      0.0069%
+   3m        100      0.0017%      0.0209%     -0.0001%
+   5m        100     -0.0007%      0.0134%     -0.0018%
+  15m        100      0.0011%      0.0137%     -0.0068%
+
+=== C) 量-价背离：放量但价格几乎没动（涨幅<25分位）-> 之后价格是否跟随 ===
+滞后            有效源    价格lift中位%       价格P99%
+
+=== D) 对照：价格剧烈波动（原口径）-> 之后价格 ===
+滞后        价格lift中位%       价格P99%
+   1m     -0.0018%      0.0229%
+   3m      0.0007%      0.0251%
+   5m      0.0061%      0.0328%
+  15m     -0.0002%      0.0175%
+
+=== 放量后 1 分钟：价格反应最强/最弱的币对（top 10）===
+  ZENUSDT       放量 -> ACTUSDT        -0.0406%
+  TRXUSDT       放量 -> BOMEUSDT       +0.0380%
+  MANTAUSDT     放量 -> PUMPUSDT       +0.0376%
+  HBARUSDT      放量 -> BOMEUSDT       +0.0370%
+  MANTAUSDT     放量 -> FILUSDT        +0.0364%
+  JASMYUSDT     放量 -> ARBUSDT        +0.0350%
+  ZROUSDT       放量 -> BOMEUSDT       +0.0349%
+  SUIUSDT       放量 -> ACTUSDT        -0.0339%
+  XLMUSDT       放量 -> ACTUSDT        -0.0339%
+  MANTAUSDT     放量 -> PEOPLEUSDT     +0.0325%
+
+saved: C:\Users\sikaq\Desktop\中信证券\coinlab\evidence\volume_lead.png
